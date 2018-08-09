@@ -8,12 +8,16 @@ import { RvisitaComponent } from './rvisita/rvisita.component';
 import { PvisitaComponent } from './pvisita/pvisita.component';
 import { ActualizarclienteComponent } from './actualizarcliente/actualizarcliente.component';
 
+//Rutas
+import { PAGES_ROUTES } from './pages.routes';
+
 
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    PAGES_ROUTES
   ],
   declarations: [
     DashboardComponent,
@@ -24,7 +28,8 @@ import { ActualizarclienteComponent } from './actualizarcliente/actualizarclient
   exports:[
     DashboardComponent,
     RvisitaComponent,
-    PvisitaComponent
+    PvisitaComponent,
+    ActualizarclienteComponent
   ]
 })
 export class PagesModule { }

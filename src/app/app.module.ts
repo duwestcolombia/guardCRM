@@ -10,6 +10,9 @@ import { PagesComponent } from './pages/pages.component';
 //Modulos
 import { PagesModule } from './pages/pages.module';
 
+//RUTAS
+import { APP_ROUTES } from './app.routes';
+
 
 
 @NgModule({
@@ -23,7 +26,8 @@ import { PagesModule } from './pages/pages.module';
   ],
   imports: [
     BrowserModule,
-    PagesModule
+    PagesModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]
